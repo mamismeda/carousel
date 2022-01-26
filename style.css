@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.carousel{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.carousel-content{
+    height: 100%;
+}
+.item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/forest-g85507cca9_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s linear;
+    transform:translateX(100%);
+    
+}
+
+.item.active{
+    transform: translateX(0);
+    z-index: 9;
+}
+.item.slow{
+    transform: translateX(-100%);
+}
+.item.preslow{
+    transform: translateX(-100%);
+}
+.carousel-inertext{
+    position:absolute;
+    left: 50%;
+    transform:translate(-50%, 50%);
+    top: 30%;
+    color: rgb(94, 3, 3);
+    text-shadow: 7px 7px 2px rgb(214, 117, 60);
+}
+.butty{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 10;
+    padding:20px;
+    outline:none;
+    border: none;
+    border-radius:8px;
+    background-color: rgb(94, 3, 3);
+    box-shadow: 2px 2px 10px rgb(214, 117, 60);
+    color: #fff;
+    cursor: pointer;
+}
+.butty.prev {
+    left: 30px;
+}
+.butty.next{
+    right: 30px;
+}
