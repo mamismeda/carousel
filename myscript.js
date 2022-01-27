@@ -42,14 +42,15 @@ prevButton.addEventListener("click", function(){
 
 })
 
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-let sliders =document.querySelectorAll('.circly');
+/*
+let sliders = document.querySelectorAll('.circly');
 sliders.forEach((pokemon)=>{
  pokemon.addEventListener('click',()=>{
 
     let activeItem = document.querySelector(".circly.activated");
     activeItem.classList.remove('activated');
-    // activeItem.classList.add('slow');
 
     if (activeItem.nextElementSibling != null) {
         activeItem.nextElementSibling.classList.add('activated');
@@ -57,10 +58,10 @@ sliders.forEach((pokemon)=>{
         sliders[0].classList.add('activated');
     }
 
-    // setTimeout(()=>{
-    //     document.querySelector('.item.preslow').classList.remove('preslow');
-    //   }, 700)
-
   });
 });
+
+*/
+
+
 
