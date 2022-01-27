@@ -1,7 +1,10 @@
 let nextButton = document.querySelector(".butty.next");
 let prevButton = document.querySelector(".butty.prev");
 let slideItem = document.querySelectorAll(".item");
-let circleButton = document.querySelectorAll(".circle");
+let butt = document.querySelectorAll(".circly");
+
+
+
 
 nextButton.addEventListener("click", function(){
     let activeItem = document.querySelector(".item.active");
@@ -19,6 +22,8 @@ nextButton.addEventListener("click", function(){
    }, 700)
 })
 
+
+
 prevButton.addEventListener("click", function(){
     let activeItem = document.querySelector(".item.active");
     activeItem.classList.remove("active");
@@ -33,9 +38,29 @@ prevButton.addEventListener("click", function(){
     setTimeout(()=>{
         document.querySelector('.item.preslow').classList.remove('preslow');
       }, 700)
+      
 
 })
 
-circleButton.addEventListener("click", function(){
-    let activeCircle = 
-})
+
+let sliders =document.querySelectorAll('.circly');
+sliders.forEach((pokemon)=>{
+ pokemon.addEventListener('click',()=>{
+
+    let activeItem = document.querySelector(".circly.activated");
+    activeItem.classList.remove('activated');
+    // activeItem.classList.add('slow');
+
+    if (activeItem.nextElementSibling != null) {
+        activeItem.nextElementSibling.classList.add('activated');
+    }else{
+        sliders[0].classList.add('activated');
+    }
+
+    // setTimeout(()=>{
+    //     document.querySelector('.item.preslow').classList.remove('preslow');
+    //   }, 700)
+
+  });
+});
+
