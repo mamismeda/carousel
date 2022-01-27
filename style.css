@@ -64,3 +64,23 @@ body{
 .butty.next{
     right: 30px;
 }
+
+.circle-div{
+    position:absolute;
+    z-index: 15;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #5e0303ab;
+    cursor: pointer;
+}
+

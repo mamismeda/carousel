@@ -1,6 +1,7 @@
 let nextButton = document.querySelector(".butty.next");
 let prevButton = document.querySelector(".butty.prev");
 let slideItem = document.querySelectorAll(".item");
+let circleButton = document.querySelectorAll(".circle");
 
 nextButton.addEventListener("click", function(){
     let activeItem = document.querySelector(".item.active");
@@ -33,4 +34,8 @@ prevButton.addEventListener("click", function(){
         document.querySelector('.item.preslow').classList.remove('preslow');
       }, 700)
 
+})
+
+circleButton.addEventListener("click", function(){
+    let activeCircle = 
 })
